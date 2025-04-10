@@ -1,33 +1,35 @@
-// script.js
-
-// Hamburguesa
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
-
-// AOS Init
-AOS.init();
-
-// Preguntas frecuentes
 document.addEventListener("DOMContentLoaded", function () {
-  const faqs = document.querySelectorAll(".faq-question");
+  // Hamburguesa
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 
-  faqs.forEach(btn => {
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active");
-      const answer = btn.nextElementSibling;
+  // AOS Init
+  AOS.init();
 
-      if (answer.style.maxHeight) {
-        answer.style.maxHeight = null;
-      } else {
-        answer.style.maxHeight = answer.scrollHeight + "px";
-      }
-    });
+  // Preguntas frecuentes - cada una funciona de forma independiente
+const faqs = document.querySelectorAll(".faq-question");
+
+faqs.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const answer = btn.nextElementSibling;
+
+    // Alternar clase activa
+    btn.classList.toggle("active");
+
+    // Mostrar/ocultar la respuesta
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
+
+
+  // Palabras rotativas
   const words = ["Multiagente", "de automatización", "De centralización", "de gestión"];
   let currentWordIndex = 0;
   const rotatingWordElement = document.querySelector(".rotating-word");

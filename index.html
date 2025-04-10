@@ -12,190 +12,213 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">ChatCorp</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <!--<li><a href="#caracteristicas">Características</a></li>-->
-      <!-- <li><a href="#demostracion">Demostración</a></li>-->
-      <li><a href="#planes">Planes</a></li>
-      <li><a href="#faq">Preguntas Frecuentes</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-    <div class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">ChatCorp</div>
 
-  <!-- Hero -->
-  <section class="hero" id="inicio">
-    <div class="hero-overlay">
-      <h1>Soluciones con Chatbots Inteligentes</h1>
-      <p>Automatizá la atención al cliente con IA de forma rápida y eficiente.</p>
-      <a href="#servicios" class="cta-button">Ver Servicios</a>
-    </div>
-  </section>
-
-
-
-  <!-- Sección de "Quienes somos" -->
-
-  <section class="section" id="quienes-somos">
-    <h2>¿Quiénes Somos?</h2>
-    <p>Somos un equipo apasionado por la tecnología y la automatización. Creamos soluciones personalizadas de chatbots que ayudan a negocios y empresas a mejorar su atención al cliente, aumentar ventas y automatizar procesos.</p>
-    <p>Creemos en la innovación constante y trabajamos de forma colaborativa con nuestros clientes para ofrecer soluciones eficientes, escalables y fáciles de usar.</p>
-     </section>
-  
-
-  <!-- servicios.html -->
-  <section class="section" id= "servicios">
-    <h2>Servicios de Chatbot</h2>
-    <div class="grid">
-      <div class="card service-card">
-        <i class="fas fa-robot fa-2x icon"></i>
-        <h3>Chatbots para Empresas</h3>
-        <p>Automatizá la atención al cliente las 24hs con un asistente virtual personalizado.</p>
+  <!-- NUEVO selector con banderas -->
+  <div class="language-switcher">
+    <div class="wrapper" id="language-switcher">
+      <div class="option">
+        <input type="radio" name="btn" class="input" value="es" id="lang-es" checked>
+        <div class="btn">
+          <span class="span">🇦🇷</span>
+        </div>
       </div>
-      <div class="card service-card">
-        <i class="fas fa-comments fa-2x icon"></i>
-        <h3>Integración Multicanal</h3>
-        <p>Implementación en WhatsApp, Messenger, Instagram, sitios web y más.</p>
-      </div>
-      <div class="card service-card">
-        <i class="fas fa-code fa-2x icon"></i>
-        <h3>Chatbot a Medida</h3>
-        <p>Diseño y programación adaptados 100% a las necesidades de tu negocio.</p>
+      <div class="option">
+        <input type="radio" name="btn" class="input" value="en" id="lang-en">
+        <div class="btn">
+          <span class="span">🇺🇸</span>
+        </div>
       </div>
     </div>
-  </section>
-  
+  </div>
 
-  <!-- caracteristicas.html -->
-  <section class="section" id ="caracteristicas">
-    <h2>¿Por qué elegirnos?</h2>
-    <div class="grid">
-      <div class="card feature-card">
-        <i class="fas fa-cogs fa-2x icon"></i>
-        <h3>Fácil de Usar</h3>
-        <p>Interfaces simples que no requieren conocimientos técnicos.</p>
-      </div>
-      <div class="card feature-card">
-        <i class="fas fa-bolt fa-2x icon"></i>
-        <h3>Respuesta Inmediata</h3>
-        <p>Asistencia instantánea para tus clientes sin tiempos de espera.</p>
-      </div>
-      <div class="card feature-card">
-        <i class="fas fa-chart-line fa-2x icon"></i>
-        <h3>Resultados Medibles</h3>
-        <p>Panel de estadísticas para analizar el rendimiento del chatbot.</p>
-      </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+    <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+    <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
+    <li><a href="#faq" data-i18n="nav.faq">Preguntas Frecuentes</a></li>
+    <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+  </ul>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero" id="inicio">
+  <div class="hero-overlay">
+    <h1 data-i18n="hero.title">Soluciones con Chatbots Inteligentes</h1>
+    <p data-i18n="hero.subtitle">Automatizá la atención al cliente con IA de forma rápida y eficiente.</p>
+    <a href="#servicios" class="cta-button" data-i18n="hero.button">Ver Servicios</a>
+  </div>
+</section>
+<!-- Sección de "Quiénes somos" -->
+<section class="section" id="quienes-somos">
+  <h2 data-i18n="about.title">¿Quiénes Somos?</h2>
+  <p data-i18n="about.p1">
+    Somos un equipo apasionado por la tecnología y la automatización. Creamos soluciones personalizadas de chatbots que ayudan a negocios y empresas a mejorar su atención al cliente, aumentar ventas y automatizar procesos.
+  </p>
+  <p data-i18n="about.p2">
+    Creemos en la innovación constante y trabajamos de forma colaborativa con nuestros clientes para ofrecer soluciones eficientes, escalables y fáciles de usar.
+  </p>
+</section>
+
+<!-- Sección de Servicios -->
+<section class="section" id="servicios">
+  <h2 data-i18n="services.title">Servicios de Chatbot</h2>
+  <div class="grid">
+    <div class="card service-card">
+      <i class="fas fa-robot fa-2x icon"></i>
+      <h3 data-i18n="services.businessTitle">Chatbots para Empresas</h3>
+      <p data-i18n="services.businessDesc">Automatizá la atención al cliente las 24hs con un asistente virtual personalizado.</p>
     </div>
-  </section>
-  
-  <!-- DEMO INTERACTIVA DEL CHATBOT -->
-  <section class="section demo-section" id="demostracion">
-    <h2 data-aos="fade-up">Proba Nuestro Chatbot</h2>
-    <div class="chat-demo" data-aos="fade-up" data-aos-delay="200">
-      <div class="chat-bubble bot">¡Hola! Soy un chatbot. ¿En qué puedo ayudarte?</div>
-      <div class="chat-bubble user">Quiero saber más sobre sus planes.</div>
-      <div class="chat-bubble bot">Tenemos opciones para todos los negocios. ¡Mirá nuestros precios más abajo!</div>
+    <div class="card service-card">
+      <i class="fas fa-comments fa-2x icon"></i>
+      <h3 data-i18n="services.integrationTitle">Integración Multicanal</h3>
+      <p data-i18n="services.integrationDesc">Implementación en WhatsApp, Messenger, Instagram, sitios web y más.</p>
     </div>
-  </section>
-
-  <!-- PREGUNTAS FRECUENTES -->  
-  <section class="section" id="faq">
-    <h2 data-aos="fade-up">Preguntas Frecuentes</h2>
-    <div class="faq-container">
-      <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-        <button class="faq-question">¿Cuánto demora la entrega del chatbot?</button>
-        <div class="faq-answer">Normalmente entre 3 y 5 días hábiles dependiendo de la complejidad.</div>
-      </div>
-      <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-        <button class="faq-question">¿Funciona con WhatsApp o Instagram?</button>
-        <div class="faq-answer">Sí, podemos integrarlo en tus canales como WhatsApp, Instagram o tu propia web.</div>
-      </div>
-      <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-        <button class="faq-question">¿Puedo modificar las respuestas luego?</button>
-        <div class="faq-answer">Claro, ofrecemos soporte para ajustes posteriores o paneles de autogestión según el plan.</div>
-      </div>
+    <div class="card service-card">
+      <i class="fas fa-code fa-2x icon"></i>
+      <h3 data-i18n="services.customTitle">Chatbot a Medida</h3>
+      <p data-i18n="services.customDesc">Diseño y programación adaptados 100% a las necesidades de tu negocio.</p>
     </div>
-  </section>
-
-
-  <!-- Demostración -->
-  <section class="section" id="demostracion">
-    <h2>Demostración</h2>
-    <div class="chat-demo">
-      <div class="chat-bubble user">Hola, ¿en qué puedo ayudarte?</div>
-      <div class="chat-bubble bot">¿Cuál es el horario de atención?</div>
-      <div class="chat-bubble user">Estamos disponibles las 24 horas, todos los días.</div>
+  </div>
+</section>
+ 
+<!-- caracteristicas.html -->
+<section class="section" id="caracteristicas">
+  <h2 data-i18n="features.title">¿Por qué elegirnos?</h2>
+  <div class="grid">
+    <div class="card feature-card">
+      <i class="fas fa-cogs fa-2x icon"></i>
+      <h3 data-i18n="features.easyTitle">Fácil de Usar</h3>
+      <p data-i18n="features.easyDesc">Interfaces simples que no requieren conocimientos técnicos.</p>
     </div>
-  </section>
-
-
-  <!-- Planes-->
-  <section class="section" id="planes">
-    <h2>Planes para cada necesidad</h2>
-    <div class="grid">
-      <div class="card plan-card">
-        <h3>Starter</h3>
-        <p class="price">$9.000 / mes</p>
-        <ul class="plan-features">
-          <li>✅ 1 canal (WhatsApp o Web)</li>
-          <li>✅ Respuestas automáticas básicas</li>
-          <li>✅ Hasta 500 mensajes por mes</li>
-          <li>❌ Soporte personalizado</li>
-        </ul>
-        <a href="#contacto" class="cta-button">Elegir este plan</a>
-      </div>
-      <div class="card plan-card destacado">
-        <h3>Pro</h3>
-        <p class="price">$18.000 / mes</p>
-        <ul class="plan-features">
-          <li>✅ Hasta 3 canales</li>
-          <li>✅ Personalización avanzada</li>
-          <li>✅ Mensajes ilimitados</li>
-          <li>✅ Soporte prioritario</li>
-        </ul>
-        <a href="#contacto" class="cta-button">Elegir este plan</a>
-      </div>
-      <div class="card plan-card">
-        <h3>Empresarial</h3>
-        <p class="price">Desde $30.000</p>
-        <ul class="plan-features">
-          <li>✅ Integración con CRM</li>
-          <li>✅ Entrenamiento personalizado</li>
-          <li>✅ Reportes y analítica</li>
-          <li>✅ Implementación a medida</li>
-        </ul>
-        <a href="#contacto" class="cta-button">Solicitar asesoría</a>
-      </div>
+    <div class="card feature-card">
+      <i class="fas fa-bolt fa-2x icon"></i>
+      <h3 data-i18n="features.fastTitle">Respuesta Inmediata</h3>
+      <p data-i18n="features.fastDesc">Asistencia instantánea para tus clientes sin tiempos de espera.</p>
     </div>
-  </section>
-  
+    <div class="card feature-card">
+      <i class="fas fa-chart-line fa-2x icon"></i>
+      <h3 data-i18n="features.resultsTitle">Resultados Medibles</h3>
+      <p data-i18n="features.resultsDesc">Panel de estadísticas para analizar el rendimiento del chatbot.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Contacto -->
-  <form id ="contacto"class="contact-form">
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" placeholder="Nombre" required />
-    
-    <label for="correo">Correo electrónico</label>
-    <input type="email" id="correo" placeholder="Correo electrónico" required />
-    
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" rows="4" placeholder="Mensaje" required></textarea>
-    
-    <button type="submit">Enviar</button>
-  </form>
-  
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 ChatCorp. Todos los derechos reservados.</p>
-  </footer>
+<!-- DEMO INTERACTIVA DEL CHATBOT -->
+<section class="section demo-section" id="demostracion">
+  <h2 data-i18n="demo.title" data-aos="fade-up">Proba Nuestro Chatbot</h2>
+  <div class="chat-demo" data-aos="fade-up" data-aos-delay="200">
+    <div class="chat-bubble bot" data-i18n="demo.bot1">¡Hola! Soy un chatbot. ¿En qué puedo ayudarte?</div>
+    <div class="chat-bubble user" data-i18n="demo.user1">Quiero saber más sobre sus planes.</div>
+    <div class="chat-bubble bot" data-i18n="demo.bot2">Tenemos opciones para todos los negocios. ¡Mirá nuestros precios más abajo!</div>
+  </div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->  
+<section class="section" id="faq">
+  <h2 data-i18n="faq.title" data-aos="fade-up">Preguntas Frecuentes</h2>
+  <div class="faq-container">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+      <button class="faq-question" data-i18n="faq.q1">¿Cuánto demora la entrega del chatbot?</button>
+      <div class="faq-answer" data-i18n="faq.a1">Normalmente entre 3 y 5 días hábiles dependiendo de la complejidad.</div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+      <button class="faq-question" data-i18n="faq.q2">¿Funciona con WhatsApp o Instagram?</button>
+      <div class="faq-answer" data-i18n="faq.a2">Sí, podemos integrarlo en tus canales como WhatsApp, Instagram o tu propia web.</div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+      <button class="faq-question" data-i18n="faq.q3">¿Puedo modificar las respuestas luego?</button>
+      <div class="faq-answer" data-i18n="faq.a3">Claro, ofrecemos soporte para ajustes posteriores o paneles de autogestión según el plan.</div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+      <button class="faq-question" data-i18n="faq.q4">¿El chatbot funciona las 24 horas?</button>
+      <div class="faq-answer" data-i18n="faq.a4">Sí, todos nuestros bots están activos 24/7 para garantizar respuestas inmediatas a tus clientes.</div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+      <button class="faq-question" data-i18n="faq.q5">¿Cuánto cuesta el servicio?</button>
+      <div class="faq-answer" data-i18n="faq.a5">Ofrecemos diferentes planes según las necesidades de tu empresa. Podés consultar precios en nuestra sección de Planes o solicitarnos una cotización.</div>
+    </div>
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+      <button class="faq-question" data-i18n="faq.q6">¿Qué pasa si el bot no entiende una pregunta?</button>
+      <div class="faq-answer" data-i18n="faq.a6">En ese caso, el bot deriva automáticamente la consulta a un agente humano o muestra una respuesta alternativa.</div>
+    </div>
+  </div>
+</section>
+
+ <!-- Planes-->
+<section class="section" id="planes">
+  <h2 data-i18n="plans.title">Planes para cada necesidad</h2>
+  <div class="grid">
+    <div class="card plan-card">
+      <h3 data-i18n="plans.starter">Starter</h3>
+      <p class="price" data-i18n="plans.starterPrice">$9.000 / mes</p>
+      <ul class="plan-features">
+        <li data-i18n="plans.starterF1">✅ 1 canal (WhatsApp o Web)</li>
+        <li data-i18n="plans.starterF2">✅ Respuestas automáticas básicas</li>
+        <li data-i18n="plans.starterF3">✅ Hasta 500 mensajes por mes</li>
+        <li data-i18n="plans.starterF4">❌ Soporte personalizado</li>
+      </ul>
+      <a href="#contacto" class="cta-button" data-i18n="plans.selectStarter">Elegir este plan</a>
+    </div>
+    <div class="card plan-card destacado">
+      <h3 data-i18n="plans.pro">Pro</h3>
+      <p class="price" data-i18n="plans.proPrice">$18.000 / mes</p>
+      <ul class="plan-features">
+        <li data-i18n="plans.proF1">✅ Hasta 3 canales</li>
+        <li data-i18n="plans.proF2">✅ Personalización avanzada</li>
+        <li data-i18n="plans.proF3">✅ Mensajes ilimitados</li>
+        <li data-i18n="plans.proF4">✅ Soporte prioritario</li>
+      </ul>
+      <a href="#contacto" class="cta-button" data-i18n="plans.selectPro">Elegir este plan</a>
+    </div>
+    <div class="card plan-card">
+      <h3 data-i18n="plans.business">Empresarial</h3>
+      <p class="price" data-i18n="plans.businessPrice">Desde $30.000</p>
+      <ul class="plan-features">
+        <li data-i18n="plans.businessF1">✅ Integración con CRM</li>
+        <li data-i18n="plans.businessF2">✅ Entrenamiento personalizado</li>
+        <li data-i18n="plans.businessF3">✅ Reportes y analítica</li>
+        <li data-i18n="plans.businessF4">✅ Implementación a medida</li>
+      </ul>
+      <a href="#contacto" class="cta-button" data-i18n="plans.selectBusiness">Elegir este plan</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<form id="contacto" class="contact-form">
+  <label for="nombre" data-i18n="contact.name">Nombre</label>
+  <input type="text" id="nombre" placeholder="Nombre" data-i18n-placeholder="contact.name" required />
+
+  <label for="correo" data-i18n="contact.email">Correo electrónico</label>
+  <input type="email" id="correo" placeholder="Correo electrónico" data-i18n-placeholder="contact.email" required />
+
+  <label for="mensaje" data-i18n="contact.message">Mensaje</label>
+  <textarea id="mensaje" rows="4" placeholder="Mensaje" data-i18n-placeholder="contact.message" required></textarea>
+
+  <button type="submit" data-i18n="contact.send">Enviar</button>
+</form>
+
+
+<!-- Footer -->
+<footer>
+  <p data-i18n="footer.rights">&copy; 2025 ChatCorp. Todos los derechos reservados.</p>
+</footer>
+
+
+
+
+  <script src="lang.js"></script>
+
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -213,6 +236,18 @@
         }
       });
     </script>
+    <script>
+      const faqItems = document.querySelectorAll('.faq-item');
+    
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+    </script>
+    
+    
     
   </body>
   

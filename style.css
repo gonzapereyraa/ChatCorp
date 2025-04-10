@@ -337,6 +337,16 @@ body.scrolled .navbar {
    SECCIÓN FAQ
    ========================================================================== */
 
+.faq-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #ccc;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .faq-container {
   display: grid;
@@ -391,6 +401,7 @@ body.scrolled .navbar {
   content: '\f078'; /* Icono caret-down */
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
+  font: 1.2rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -652,3 +663,68 @@ footer {
     font-size: 0.95rem;
   }
 }
+
+/* Selector de idioma con banderas */
+.wrapper {
+  --font-color-dark: #323232;
+  --font-color-light: #fff;
+  --bg-color: #fff;
+  --main-color: #323232;
+  --secondary-color: #505050;
+  width: 100px;
+  height: 36px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 34px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 2px 2px var(--main-color);
+}
+
+.option {
+  width: 45px;
+  height: 28px;
+  position: relative;
+  border-radius: 34px;
+  transition: 0.25s;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span {
+  color: var(--font-color-dark);
+  font-size: 18px;
+}
+
+.input:checked + .btn {
+  background-color: var(--main-color);
+  transition: 0.2s;
+}
+
+.input:checked + .btn .span {
+  color: var(--font-color-light);
+  transition: 0.25s;
+}
+
+.language-switcher {
+  margin: 0 15px;
+}
+
